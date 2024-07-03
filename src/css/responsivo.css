@@ -109,22 +109,67 @@
 
 }
 
-@media (max-width: 415px){
+@media (max-width: 690px){
+    .cabecalho {
+        height: 100px;
+        background-color: #000000;
+        display: flex;
+        flex-direction: row;
+        
+        padding: 0 60px;
+        border-bottom: 1px solid #282828;
+    }
+
+    .cabecalho .menu{
+        display: flex;
+        gap: 30px;
+    }
+
+    .cabecalho .menu li a{
+        padding: 10px;
+        color: #e8e8e8;
+        font-weight: bolder;
+        font-size: 10px;
+        font-family: 'chalet';
+    }
+
+    .home .informacoes {
+        
+        width: 110%;
+        margin-left: 1px;
+        padding-left: 15px;
+    }
+
+}
+
+@media (max-width: 450px){
     .main::after{
         
         background: linear-gradient(90deg rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4)100%, transparent 65%);
     }
 
+    .cabecalho .menu{
+        display: flex;
+        gap: 1px;
+    }
+    .cabecalho .menu li a{
+        padding: 15px;
+        color: #e8e8e8;
+        font-weight: bolder;
+        font-size: 6px;
+        font-family: 'chalet';
+    }
+    
+    .home .imagem-fundo{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
     .home .informacoes {
-        /* position: absolute; */
-        z-index: 1;
-        min-height: calc(10vh - 10px);
-       
         
-        /* justify-content:; */
-        gap: 10px;
-        padding: 10px 30px 10px 30px;
-        max-width:270px;
+        width: 100%;
+        
     }
 
     .home .informacoes .titulo{
@@ -145,4 +190,91 @@
         padding: 5px 15px;
         width: 30%;
     }    
+}
+
+@media (max-width: 420px){
+    .cabecalho {
+        height: 90px;
+        width: 100%;
+        background-color: #000000;
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        border-bottom: 1px solid #282828;
+    }
+
+    .cabecalho .logo {
+        display: flex;
+        gap: 12px;
+        height: 60px;
+    }
+
+    .cabecalho .menu{
+        display: flex;
+        gap: 5px;
+    }
+
+    .cabecalho .menu li a{
+        padding: 5px;
+        color: #e8e8e8;
+        font-weight: bolder;
+        font-size: 6px;
+        font-family: 'chalet';
+    }
+
+    .home .informacoes {
+        
+        width: 100%;
+        
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 395px){
+    .cabecalho {
+        height: 90px;
+        width: 100%;
+        background-color: #000000;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        border-bottom: 1px solid #282828;
+    }
+
+    .cabecalho .logo {
+        display: flex;
+        gap: 12px;
+        height: 60px;
+    }
+
+    .cabecalho .menu{
+        display: flex;
+        gap: 5px;
+    }
+
+    .cabecalho .menu li a{
+        padding: 5px;
+        color: #e8e8e8;
+        font-weight: bolder;
+        font-size: 6px;
+        font-family: 'chalet';
+    }
+
+    .home .informacoes {
+        
+        width: 100%;
+        
+        padding-left: 15px;
+    }
+}
+@media (max-width: 360px){
+    .cabecalho {
+        height: 90px;
+        width: 100%;
+        background-color: #000000;
+        display: flex;
+        align-items: center;
+        padding: 0 5px;
+        border-bottom: 1px solid #282828;
+    }
 }
